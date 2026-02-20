@@ -48,14 +48,15 @@ def stdev(data_set, avg):
     """
     variance = sum([(integer - avg) ** 2 for integer in data_set])/len(data_set)
     # return the square root of the variance calculation 
-    return variance ** .5	
-	def least(data_set):
+    return variance ** .5
+
+def least(data_set):
     """
     Returns the least value in the data_set(population)
     **Do not change this function**
     """
     return min(data_set)
-	
+
 def greatest(data_set):
     """
     Returns the greatest value in the data_set(population)
@@ -93,10 +94,10 @@ def test_z_score_function():
 # YOUR CODE GOES BELOW THIS BOX.                      #
 #                                                     #
 # Complete the following z_score function.            #
-# You may call the functions above,				#
+# You may call the functions above,                   #
 #   but do not define any others (except for testing) #
-# You may use arithmetic operators                    #
-#  (i.e., +, -, *, **, /) but not Python Boolean      #
+# You may use arithmetic operators                     #
+#  (i.e., +, -, *, **, /) but not Python Boolean       #
 #  (call the provided functions instead)              #
 #                                                     #
 # Be sure to include names of the group members that  #
@@ -120,3 +121,6 @@ def z_score(x, mu, sigma):
     # Your code goes between this comment and the return statement
     z = (x - mu) / sigma
     return z
+
+# Run the tests to see output
+test_z_score_function()
